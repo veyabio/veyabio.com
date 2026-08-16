@@ -1,0 +1,67 @@
+---
+title: Let's talk
+description: Tell VeyaBio about your science communication challenge, project, or ongoing content needs.
+permalink: /contact/
+---
+<header class="page-hero">
+  <div class="container page-hero-grid">
+    <div class="reveal">
+      <p class="eyebrow">Contact</p>
+      <h1>Let’s talk.</h1>
+      <p class="deck">Have a project in mind—or just want to figure out what kind of support you need? Start with a few details.</p>
+    </div>
+    <div class="page-hero-meta reveal reveal-delay">
+      <span>Good starting point</span>
+      <strong>What are you trying to make clearer?</strong>
+      <span>No polished brief required</span>
+    </div>
+  </div>
+</header>
+
+<section class="contact-section">
+  <div class="container contact-grid">
+    <div class="contact-details reveal">
+      <p class="eyebrow">Start a conversation</p>
+      <h2>Tell me about the science—and who needs to understand it.</h2>
+      <p>Use the form or email directly. The form prepares a message in your email app, so your enquiry stays with you until you choose to send it.</p>
+      <a class="direct-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <div class="response-note">
+        <span>Project types</span>
+        <p>Websites · Social campaigns · Collateral · Science translation</p>
+      </div>
+    </div>
+    <form class="contact-form reveal" data-contact-form data-contact-email="{{ site.email }}">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="company">Company</label>
+        <input id="company" name="company" type="text" autocomplete="organization">
+      </div>
+      <div class="field">
+        <label for="need">What do you need help with?</label>
+        <select id="need" name="need" required>
+          <option value="" selected disabled>Select one</option>
+          <option>Website</option>
+          <option>Social</option>
+          <option>Collateral</option>
+          <option>Advertising</option>
+          <option>Science translation</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="field field-full">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="What are you working on, and what needs to become clearer?"></textarea>
+      </div>
+      <button class="button" type="submit">Prepare email <span aria-hidden="true">↗</span></button>
+      <p class="form-note">Submitting opens your default email application; nothing is stored by this website.</p>
+    </form>
+  </div>
+</section>
+

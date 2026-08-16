@@ -1,0 +1,11 @@
+- label: Home
+  url: /
+- label: Services
+  url: /services/
+- label: Work
+  url: /work/
+- label: Blog
+  url: /blog/
+- label: Contact
+  url: /contact/
+

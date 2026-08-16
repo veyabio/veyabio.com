@@ -1,0 +1,49 @@
+---
+title: Insights
+description: Practical thinking on biotech content strategy, science communication, and clearer scientific storytelling.
+permalink: /blog/
+---
+<header class="page-hero">
+  <div class="container page-hero-grid">
+    <div class="reveal">
+      <p class="eyebrow">Insights</p>
+      <h1>Thinking, translated.</h1>
+      <p class="deck">Practical notes on scientific storytelling, biotech content strategy, and communication that respects the reader.</p>
+    </div>
+    <div class="page-hero-meta reveal reveal-delay">
+      <span>Topics</span>
+      <strong>Content strategy · Industry notes</strong>
+      <span>New perspectives as the work evolves</span>
+    </div>
+  </div>
+</header>
+
+<section class="blog-section">
+  <div class="container">
+    {% assign featured = site.posts.first %}
+    {% if featured %}
+      <a class="featured-post reveal" href="{{ featured.url | relative_url }}">
+        <div class="featured-visual" aria-hidden="true"></div>
+        <div class="featured-copy">
+          <p class="eyebrow eyebrow-light">Featured · {{ featured.category }}</p>
+          <h2>{{ featured.title }}</h2>
+          <p>{{ featured.description }}</p>
+          <span class="text-link">Read the article <span>↗</span></span>
+        </div>
+      </a>
+    {% endif %}
+
+    <div class="post-grid">
+      {% for post in site.posts offset:1 %}
+        <a class="post-card reveal" href="{{ post.url | relative_url }}">
+          <div class="post-card-meta"><span>{{ post.category }}</span><span>{{ post.read_time }}</span></div>
+          <h2>{{ post.title }}</h2>
+          <p>{{ post.description }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include final-cta.html %}
+

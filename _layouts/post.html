@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="page-hero post-hero">
+    <div class="container page-hero-grid">
+      <div class="reveal">
+        <a class="back-link" href="{{ '/blog/' | relative_url }}">← All insights</a>
+        <p class="eyebrow">{{ page.category }}</p>
+        <h1>{{ page.title }}</h1>
+        <p class="post-deck">{{ page.description }}</p>
+      </div>
+      <div class="page-hero-meta reveal reveal-delay">
+        <span>Published</span>
+        <strong>{{ page.date | date: "%d %B %Y" }}</strong>
+        <span>{{ page.read_time | default: "5 min read" }}</span>
+      </div>
+    </div>
+  </header>
+  <div class="container article-shell">
+    <div class="article-body reveal">
+      {{ content }}
+    </div>
+    <aside class="article-aside reveal">
+      <p class="eyebrow">Need a clearer message?</p>
+      <p>VeyaBio helps scientific organisations turn complexity into communication that connects.</p>
+      <a class="text-link" href="{{ '/contact/' | relative_url }}">Start a conversation <span>↗</span></a>
+    </aside>
+  </div>
+</article>
+{% include final-cta.html %}
+

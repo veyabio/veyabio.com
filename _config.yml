@@ -1,0 +1,42 @@
+title: VeyaBio
+tagline: The space between discovery and market.
+description: >-
+  VeyaBio helps biotech, medtech, and biomedical organisations turn complex
+  science into clear, compelling communication.
+url: "https://veyabio.com"
+baseurl: ""
+repository: veyabio/veyabio.com
+email: hello@veyabio.com
+lang: en
+timezone: Africa/Blantyre
+
+permalink: /blog/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Reference
+  - tmp
+  - dist
+  - vendor

@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="container footer-main">
+    <a class="footer-brand" href="{{ '/' | relative_url }}" aria-label="VeyaBio home">
+      <img src="{{ '/assets/images/veyabio-logo.png' | relative_url }}" alt="VeyaBio" width="1200" height="285">
+    </a>
+    <p class="footer-line">The space between discovery and market.</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      {% for item in site.data.navigation %}<a href="{{ item.url | relative_url }}">{{ item.label }}</a>{% endfor %}
+    </nav>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-year></span> VeyaBio</p>
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <p>Precision · Scientific integrity · Strategic clarity</p>
+  </div>
+</footer>
