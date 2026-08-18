@@ -2,6 +2,8 @@
 
 A Jekyll website for `veyabio.com`, built around the official VeyaBio brand system.
 
+For collaborators using Claude or GitHub Copilot, see the [website editing guide](.github/EDITING_GUIDE.md).
+
 ## Fast local preview (no downloads)
 
 From the repository folder:
